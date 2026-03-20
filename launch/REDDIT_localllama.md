@@ -15,7 +15,6 @@ It supports local evals via **Ollama**:
 …and can run async/parallel eval calls + generate an HTML report.
 
 Repo: <REPO_URL>
-PyPI: https://pypi.org/project/openeval/
+PyPI: https://pypi.org/project/openeval-ai/
 
 If you’re doing local model iteration, what eval suites do you find most useful (factuality, instruction following, hallucination/uncertainty, RAG relevance, etc.)?
-

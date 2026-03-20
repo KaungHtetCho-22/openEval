@@ -7,9 +7,10 @@
     /_/
 ```
 
-[![PyPI](https://img.shields.io/pypi/v/openeval)](https://pypi.org/project/openeval/)
+[![PyPI](https://img.shields.io/pypi/v/openeval-ai)](https://pypi.org/project/openeval-ai/)
 ![Python](https://img.shields.io/badge/python-3.11%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
+[![Stars](https://img.shields.io/github/stars/KaungHtetCho-22/openEval?style=social)](https://github.com/KaungHtetCho-22/openEval)
 
 **Model-agnostic LLM evaluation that feels like pytest.**
 
@@ -20,6 +21,8 @@
 ```bash
 pip install openeval-ai
 ```
+
+Note: the PyPI project is `openeval-ai`, but you still `import openeval`.
 
 Optional extras:
 
@@ -118,7 +121,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: OWNER/openeval-action@v1 # replace OWNER
+      - uses: KaungHtetCho-22/openEval/openeval-action@v1
         with:
           suite: hallucination
           model: openai:gpt-4o-mini

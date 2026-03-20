@@ -18,7 +18,7 @@ Benchmarks (measured 2026-03-20): OpenEval’s harness is lightweight compared t
 
 GitHub: <REPO_URL>
 Docs: <DOCS_URL>
-PyPI: https://pypi.org/project/openeval/
+PyPI: https://pypi.org/project/openeval-ai/
 
 Limitations:
 - `llm_judge` is BYO judge function (no hidden SaaS)
@@ -26,4 +26,3 @@ Limitations:
 - this is v0.1.0; API may evolve
 
 I’d love feedback on missing scorers / suite ideas, and what would make this useful in your CI.
-

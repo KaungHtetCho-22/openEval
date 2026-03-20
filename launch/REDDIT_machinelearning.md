@@ -18,7 +18,6 @@ Benchmark comparison (measured 2026-03-20): on a small offline mock task, OpenEv
 
 Repo: <REPO_URL>
 Docs: <DOCS_URL>
-PyPI: https://pypi.org/project/openeval/
+PyPI: https://pypi.org/project/openeval-ai/
 
 Feedback welcome — especially on which built-in suites/scorers you’d expect for v0.1.x.
-

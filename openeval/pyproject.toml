@@ -30,10 +30,10 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/openeval"
-Repository = "https://github.com/yourusername/openeval"
-Documentation = "https://yourusername.github.io/openeval"
-Issues = "https://github.com/yourusername/openeval/issues"
+Homepage = "https://github.com/KaungHtetCho-22/openEval"
+Repository = "https://github.com/KaungHtetCho-22/openEval"
+Documentation = "https://kaunghtetcho-22.github.io/openEval/"
+Issues = "https://github.com/KaungHtetCho-22/openEval/issues"
 
 [project.optional-dependencies]
 dev = [
