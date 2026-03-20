@@ -1,0 +1,11 @@
+{"input":"Respond only with a number.","expected_output":"^\\\\d+$","example_output":"42"}
+{"input":"Answer in exactly three words: describe the ocean.","expected_output":"^\\\\w+\\\\s+\\\\w+\\\\s+\\\\w+$","example_output":"vast blue expanse"}
+{"input":"Respond with YES or NO only. Is 2+2=4?","expected_output":"^(YES|NO)$","example_output":"YES"}
+{"input":"Respond only with a lowercase hex color code (e.g. #1a2b3c).","expected_output":"^#[0-9a-f]{6}$","example_output":"#1a2b3c"}
+{"input":"Answer with an email address only.","expected_output":"^[^@\\\\s]+@[^@\\\\s]+\\\\.[^@\\\\s]+$","example_output":"test@example.com"}
+{"input":"Respond with a date in YYYY-MM-DD format.","expected_output":"^\\\\d{4}-\\\\d{2}-\\\\d{2}$","example_output":"2026-03-20"}
+{"input":"Respond with 'OK' followed by a space and a 2-digit number.","expected_output":"^OK\\\\s+\\\\d{2}$","example_output":"OK 07"}
+{"input":"Respond with a single word in ALL CAPS.","expected_output":"^[A-Z]+$","example_output":"HELLO"}
+{"input":"Return a markdown heading level 2 only (starts with '## ').","expected_output":"^##\\\\s+.+$","example_output":"## Title"}
+{"input":"Respond with a comma-separated list of exactly 3 items.","expected_output":"^[^,]+,\\\\s*[^,]+,\\\\s*[^,]+$","example_output":"a, b, c"}
+

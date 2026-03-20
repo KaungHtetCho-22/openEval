@@ -1,0 +1,86 @@
+{
+  "generated_at": 1774017869.1398242,
+  "results": [
+    {
+      "tool": "openeval",
+      "task": "A",
+      "loc": 38,
+      "setup_s": 0.0899258419999569,
+      "run_s": 0.20328472199980752,
+      "ok": true,
+      "notes": ""
+    },
+    {
+      "tool": "deepeval",
+      "task": "A",
+      "loc": 44,
+      "setup_s": 2.2501305759997194,
+      "run_s": 0.26123360500014314,
+      "ok": true,
+      "notes": ""
+    },
+    {
+      "tool": "promptfoo",
+      "task": "A",
+      "loc": 50,
+      "setup_s": null,
+      "run_s": null,
+      "ok": false,
+      "notes": "set OPENEVAL_BENCH_PROMPTFOO=1 to run"
+    },
+    {
+      "tool": "openeval",
+      "task": "B",
+      "loc": 35,
+      "setup_s": 0.0001237659998878371,
+      "run_s": 0.15176613399989947,
+      "ok": true,
+      "notes": ""
+    },
+    {
+      "tool": "deepeval",
+      "task": "B",
+      "loc": 55,
+      "setup_s": 1.722200753999914,
+      "run_s": 0.15288851500008604,
+      "ok": true,
+      "notes": ""
+    },
+    {
+      "tool": "promptfoo",
+      "task": "B",
+      "loc": 40,
+      "setup_s": null,
+      "run_s": null,
+      "ok": false,
+      "notes": "set OPENEVAL_BENCH_PROMPTFOO=1 to run"
+    },
+    {
+      "tool": "openeval",
+      "task": "C",
+      "loc": 37,
+      "setup_s": 0.0008287299997391528,
+      "run_s": 0.2024804940001559,
+      "ok": true,
+      "notes": ""
+    },
+    {
+      "tool": "deepeval",
+      "task": "C",
+      "loc": 41,
+      "setup_s": 2.5123570159998962,
+      "run_s": 0.275335369000004,
+      "ok": true,
+      "notes": ""
+    },
+    {
+      "tool": "promptfoo",
+      "task": "C",
+      "loc": 30,
+      "setup_s": null,
+      "run_s": null,
+      "ok": false,
+      "notes": "set OPENEVAL_BENCH_PROMPTFOO=1 to run"
+    }
+  ]
+}

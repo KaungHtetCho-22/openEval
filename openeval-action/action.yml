@@ -1,0 +1,44 @@
+name: "OpenEval — LLM Evaluation"
+description: "Run OpenEval LLM evaluations in CI and post results on pull requests."
+author: "OpenEval"
+branding:
+  icon: "check-circle"
+  color: "purple"
+
+inputs:
+  dataset:
+    description: "Path to CSV/JSONL dataset file (required unless suite is provided)."
+    required: false
+  suite:
+    description: "Built-in suite: hallucination, factuality, instruction_following."
+    required: false
+  model:
+    description: "Model string like openai:gpt-4o-mini, anthropic:..., ollama:llama3.2."
+    required: true
+  threshold:
+    description: "Pass threshold (0.0–1.0)."
+    required: false
+    default: "0.7"
+  fail_on_threshold:
+    description: "Fail the job if pass rate is below threshold."
+    required: false
+    default: "true"
+  openai_api_key:
+    description: "Optional OpenAI API key (prefer env OPENAI_API_KEY)."
+    required: false
+  anthropic_api_key:
+    description: "Optional Anthropic API key (prefer env ANTHROPIC_API_KEY)."
+    required: false
+
+outputs:
+  pass_rate:
+    description: "Overall pass rate (0.0–1.0)."
+  passed:
+    description: "true if pass_rate >= threshold else false."
+  report_path:
+    description: "Path to generated HTML report."
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+

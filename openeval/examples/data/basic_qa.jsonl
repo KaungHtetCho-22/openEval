@@ -1,0 +1,11 @@
+{"input":"What is 2+2?","expected_output":"4"}
+{"input":"What is the capital of France?","expected_output":"Paris"}
+{"input":"What is the largest planet in our solar system?","expected_output":"Jupiter"}
+{"input":"What is the chemical symbol for water?","expected_output":"H2O"}
+{"input":"How many continents are there on Earth?","expected_output":"7"}
+{"input":"What is the square root of 81?","expected_output":"9"}
+{"input":"What gas do plants absorb from the atmosphere?","expected_output":"carbon dioxide"}
+{"input":"Who wrote '1984'?","expected_output":"George Orwell"}
+{"input":"What is the capital of Japan?","expected_output":"Tokyo"}
+{"input":"What is the freezing point of water in Celsius?","expected_output":"0"}
+

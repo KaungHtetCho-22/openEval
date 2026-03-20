@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+prompts:
+  - "{{input}}"
+
+providers:
+  - id: file://benchmarks/promptfoo_provider.py:provider
+    label: mock
+    config:
+      variant: good
+
+tests:
+  - vars: { input: "What is 2+2?", expected_output: "4" }
+    assert:
+      - type: exact-match
+        value: "{{expected_output}}"
+  - vars: { input: "Capital of France?", expected_output: "Paris" }
+    assert: [{ type: exact-match, value: "{{expected_output}}" }]
+  - vars: { input: "Capital of Japan?", expected_output: "Tokyo" }
+    assert: [{ type: exact-match, value: "{{expected_output}}" }]
+  - vars: { input: "Largest planet?", expected_output: "Jupiter" }
+    assert: [{ type: exact-match, value: "{{expected_output}}" }]
+  - vars: { input: "Chemical symbol for water?", expected_output: "H2O" }
+    assert: [{ type: exact-match, value: "{{expected_output}}" }]
+  - vars: { input: "Square root of 81?", expected_output: "9" }
+    assert: [{ type: exact-match, value: "{{expected_output}}" }]
+  - vars: { input: "How many continents?", expected_output: "7" }
+    assert: [{ type: exact-match, value: "{{expected_output}}" }]
+  - vars: { input: "Primary language in Brazil?", expected_output: "Portuguese" }
+    assert: [{ type: exact-match, value: "{{expected_output}}" }]
+  - vars: { input: "Freezing point of water (C)?", expected_output: "0" }
+    assert: [{ type: exact-match, value: "{{expected_output}}" }]
+  - vars: { input: "Who wrote 1984?", expected_output: "George Orwell" }
+    assert: [{ type: exact-match, value: "{{expected_output}}" }]
+  - vars: { input: "Capital of Canada?", expected_output: "Ottawa" }
+    assert: [{ type: exact-match, value: "{{expected_output}}" }]
+  - vars: { input: "Largest ocean?", expected_output: "Pacific" }
+    assert: [{ type: exact-match, value: "{{expected_output}}" }]
+  - vars: { input: "3*3?", expected_output: "9" }
+    assert: [{ type: exact-match, value: "{{expected_output}}" }]
+  - vars: { input: "Opposite of hot?", expected_output: "cold" }
+    assert: [{ type: exact-match, value: "{{expected_output}}" }]
+  - vars: { input: "Color of a clear daytime sky?", expected_output: "blue" }
+    assert: [{ type: exact-match, value: "{{expected_output}}" }]
+  - vars: { input: "First month of the year?", expected_output: "January" }
+    assert: [{ type: exact-match, value: "{{expected_output}}" }]
+  - vars: { input: "How many days in a week?", expected_output: "7" }
+    assert: [{ type: exact-match, value: "{{expected_output}}" }]
+  - vars: { input: "What is 10/2?", expected_output: "5" }
+    assert: [{ type: exact-match, value: "{{expected_output}}" }]
+  - vars: { input: "What is the capital of Italy?", expected_output: "Rome" }
+    assert: [{ type: exact-match, value: "{{expected_output}}" }]
+  - vars: { input: "What is the chemical symbol for oxygen?", expected_output: "O" }
+    assert: [{ type: exact-match, value: "{{expected_output}}" }]
+

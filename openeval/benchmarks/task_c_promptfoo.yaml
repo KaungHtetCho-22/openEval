@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+prompts:
+  - "{{input}}"
+
+providers:
+  - id: file://benchmarks/promptfoo_provider.py:provider
+    label: good
+    config: { variant: good }
+  - id: file://benchmarks/promptfoo_provider.py:provider
+    label: bad
+    config: { variant: bad }
+
+tests:
+  - vars: { input: "Capital of France?", expected_output: "Paris" }
+    assert: [{ type: exact-match, value: "{{expected_output}}" }]
+  - vars: { input: "Capital of Japan?", expected_output: "Tokyo" }
+    assert: [{ type: exact-match, value: "{{expected_output}}" }]
+  - vars: { input: "Largest planet?", expected_output: "Jupiter" }
+    assert: [{ type: exact-match, value: "{{expected_output}}" }]
+  - vars: { input: "Chemical symbol for water?", expected_output: "H2O" }
+    assert: [{ type: exact-match, value: "{{expected_output}}" }]
+  - vars: { input: "Square root of 81?", expected_output: "9" }
+    assert: [{ type: exact-match, value: "{{expected_output}}" }]
+  - vars: { input: "How many continents?", expected_output: "7" }
+    assert: [{ type: exact-match, value: "{{expected_output}}" }]
+  - vars: { input: "Freezing point of water (C)?", expected_output: "0" }
+    assert: [{ type: exact-match, value: "{{expected_output}}" }]
+  - vars: { input: "What is 10/2?", expected_output: "5" }
+    assert: [{ type: exact-match, value: "{{expected_output}}" }]
+  - vars: { input: "What is the capital of Italy?", expected_output: "Rome" }
+    assert: [{ type: exact-match, value: "{{expected_output}}" }]
+  - vars: { input: "What is the chemical symbol for oxygen?", expected_output: "O" }
+    assert: [{ type: exact-match, value: "{{expected_output}}" }]
+
