@@ -3,7 +3,7 @@ requires = ["hatchling>=1.25.0"]
 build-backend = "hatchling.build"
 
 [project]
-name = "openeval"
+name = "openeval-ai"
 version = "0.1.0"
 description = "Model-agnostic LLM evaluation that feels like pytest."
 readme = "README.md"

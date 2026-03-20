@@ -20,6 +20,13 @@ python -m build
 python -m twine check dist/*
 ```
 
+Publish to TestPyPI (using `uv`):
+
+```bash
+uv build
+uv publish --publish-url https://test.pypi.org/legacy/ --check-url https://test.pypi.org/simple/ --token "$TEST_PYPI_TOKEN" dist/*
+```
+
 Test install in a clean venv:
 
 ```bash

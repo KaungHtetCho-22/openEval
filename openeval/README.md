@@ -18,15 +18,15 @@
 ## Install
 
 ```bash
-pip install openeval
+pip install openeval-ai
 ```
 
 Optional extras:
 
 ```bash
-pip install "openeval[openai]"      # OpenAI adapter
-pip install "openeval[anthropic]"   # Anthropic adapter
-pip install "openeval[semantic]"    # semantic_sim scorer
+pip install "openeval-ai[openai]"      # OpenAI adapter
+pip install "openeval-ai[anthropic]"   # Anthropic adapter
+pip install "openeval-ai[semantic]"    # semantic_sim scorer
 ```
 
 ## Quickstart (10 lines, zero config)
